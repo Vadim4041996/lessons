@@ -1,0 +1,51 @@
+@import url("reset.css");
+
+/* 
+змушений додати розмір тексту до боді тому, що працюю за маленьким монітором і дуже погано видно 
+*/
+body {
+    font-size: 20px;
+}
+
+/* основні стилі */
+h1,
+h2,
+h3 {
+    color: green;
+}
+.header * {
+    color: red;
+}
+#begin-page {
+    color: blue;
+}
+.list a {
+    color: brown;
+}
+[class*="text"] {
+    color: darkolivegreen;
+}
+.page-text.text {
+    color: springgreen;
+}
+.text > p {
+    color: darkmagenta;
+}
+.text ~ p {
+    color: darkorange;
+}
+.text + p {
+    color: turquoise;
+}
+p.paragraph {
+    color: darkgray;
+}
+.list-item li {
+    color: blue;
+}
+.list-item .item {
+    color: red;
+}
+.list-item .item {
+    color: darkred;
+}
