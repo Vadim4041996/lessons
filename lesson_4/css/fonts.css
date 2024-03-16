@@ -21,7 +21,7 @@
 
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/ProximaNova-RegularIt.woff2") forma("woff2");
+    src: url("../fonts/ProximaNova-RegularIt.woff2") format("woff2");
     font-weight: normal;
     font-style: italic;
     font-display: swap;
