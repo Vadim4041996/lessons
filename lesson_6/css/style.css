@@ -1,0 +1,276 @@
+
+/*======================= FONTS =======================*/
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:italic,300,400,500,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap");
+/*=====================================================*/
+
+
+
+
+/*==================== Reset Style ====================*/
+@import url("reset.css");
+/*=====================================================*/
+
+
+
+
+/*====================================================*/
+/*==================== Page Style ====================*/
+/*====================================================*/
+
+
+
+/*================= CoraL(section 1) =================*/
+/*================= Viewport(1920px) =================*/
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    background: #fff;
+}
+
+.wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url("../img/frame_2.png") right 221px / 195px no-repeat,
+     #f4f4f5 url("../img/frame_1.png") 0 470px / 132px no-repeat;
+}
+
+.container{
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f4f4f5;
+ }
+
+.header__logo {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.content {
+    max-width: 686px;
+    width: 100%;
+    display: inline-block;
+    margin-right: 98px;
+    padding-top: 75px;
+}
+
+.content-text h1 {
+    font-size: 74px;
+    font-weight: 300;
+    margin-bottom: 52px;
+}
+
+.content-text p {
+    font-size: 30px;
+    line-height: 1.83333;
+    margin-bottom: 66px;
+    text-transform: capitalize;
+}
+
+.button {
+    max-width: 223px;
+    min-height: 40px;
+    background: #1e2832 url("../img/icon.svg") 29px / 24px no-repeat;
+}
+
+.button-link {
+    color: #fff;
+    font-size: 29px;
+    text-transform: capitalize;
+    padding: 19px 26px 19px 64px;
+}
+
+.image-product {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 424px;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 160px 0;
+}
+
+.image-product img {
+    width: 100%;
+    border-radius: 160px 0;
+    margin-top: -20px;
+    margin-right: 18px;
+    margin-bottom: 20px;
+    margin-left: -18px;
+}
+
+
+
+
+/*================= Kid-on-Book(section 2) =================*/
+/*=================    Viewport(1440px)    =================*/
+.main-section {
+    background: url("../img/letters.svg") 200px -20px / 1320px 620px no-repeat,
+    #914cff url("../img/background.png") center / cover no-repeat;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;  
+    margin-bottom: 40px;
+}
+
+.section-container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contant-section {
+    max-width: 600px;
+    width: 100%;
+    display: inline-block;
+    padding-top: 121px;
+    margin-right: 150px;
+}
+
+.main-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+.main-text p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.contant-bottom {
+    max-width: 217px;
+    min-height: 48px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contant-bottom a {
+    width: 100%;
+    background: #fff url("../img/hat_label.png") 20px / 16px no-repeat;
+    color: #0d1216;
+    line-height: 1.5625;
+    font-weight: 700;
+    padding: 11px 20px;
+    padding-left: 40px;
+}
+
+.illustration {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 515px;
+    width: 100%;
+}
+
+.illustration img {
+    width: 100%;
+}
+
+
+/*=================  Krovato  (section 3)  =================*/
+/*=================    Viewport(1920px)    =================*/
+.article {
+    font-family: "Proxima Nova", sans-serif;
+    color: #2b2929;
+    margin-bottom: 40px;
+}
+
+.article__container {
+    max-width: 1070px;
+    width: 100%;
+}
+
+.text-article {
+    margin-bottom: 40px;
+}
+
+.text-article h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.text-article img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.text-article p {
+    line-height: 1.875;
+}
+
+.text-list h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.text-list li {
+    background: url("../img/tick.png") 2px 0px / 27px no-repeat;
+    padding-left: 47px;
+    min-height: 27px;
+    line-height: 1.875;
+    margin-bottom: 20px;
+}
+
+.text-list > p {
+    line-height: 1.875;
+}
+
+.footer__container {
+    max-width: 1070px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.footer-button {
+    font-family: "Proxima Nova", sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+
+.buttons {
+    max-width: 300px;
+    width: 100%;
+    display: inline-block;
+    background: #ffbc57;
+    padding: 20px;
+    margin-right: 110px;
+    margin-left: 120px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 8px -1px 10px 1px blue;
+}
+
+.buttons a {
+    font-weight: 600;
+    line-height: 1.26316;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+
+
+
+
+
