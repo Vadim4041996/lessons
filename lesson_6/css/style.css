@@ -204,6 +204,7 @@ header {
 .text-article img {
     width: 100%;
     margin-bottom: 40px;
+    border-radius: 8px;
 }
 
 .text-article p {
