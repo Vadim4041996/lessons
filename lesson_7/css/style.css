@@ -1,0 +1,412 @@
+/*=====================================================*/
+/*======================= FONTS =======================*/
+/*=====================================================*/
+
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+
+/*=====================================================*/
+/*==================== Reset Style ====================*/
+/*=====================================================*/
+
+@import url("reset.css");
+
+
+
+
+/*=====================================================*/
+    /* 
+        Я використав властивість (transition) в деяких 
+        моментах,яку ми не вивчали, але ефект настильки 
+        красивий, що я не втримався від використання в 
+        практиці
+    */
+/*=====================================================*/
+
+
+
+
+/*====================================================*/
+/*======================= About ======================*/
+/*====================================================*/
+
+body {
+    font-family: "Exo", sans-serif;
+    background: #000001;
+    color: #fff;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-about {
+    padding-top: 15px;
+}
+
+.section-about > * {
+    margin-bottom: 25px;
+}
+
+.section-about > *:last-child {
+    margin-bottom: 0px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;  
+    line-height: 1.16667;
+    text-align: center;
+    transition: .5s all;
+}
+
+.title:hover {
+    color: plum;
+    opacity: 0.8;
+    letter-spacing: 2px;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    max-width: 30%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+    margin: 35px auto 25px;
+}
+
+.section-about {
+    margin-bottom: 30px;
+}
+
+.section-about p {
+    font-size: 18px;
+    line-height: 2.22222;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto 60px; 
+}
+
+.list {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.item {
+    display: inline-block;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    text-transform: capitalize;
+    text-align: center;
+    transition: .3s all;
+    
+}
+
+.item::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.item:hover {
+    text-decoration: underline;
+    font-size: 21px;
+    opacity: 0.8;
+    color: bisque;
+} 
+
+/* ============================================================== */
+/* ========================== G A M E =========================== */
+/* ============================================================== */
+
+.section-game {
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.block {
+    background: radial-gradient(circle, rgba(26,29,126,1) 0%, rgba(255,0,174,1) 50%, rgba(36,0,255,1) 100%);
+    border-radius: 20px; 
+    font-size: 0px;
+    padding: 30px 20px;
+}
+
+.block span {
+    padding: 10px;
+    border-radius: 20px 5px 5px 20px;
+    color: black;
+    font-size: 30px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 10px white, inset 0px 0px 3px 1px red;
+}
+
+.block-1 {
+    vertical-align: top;
+    display: inline-block;
+    background-color: #fff;
+    width: 400px;
+    height: 20px;
+}
+
+.block-2 {
+    vertical-align: top;
+    display: inline-block;
+    background-color: #fff;
+    width: 20px;
+    height: 200px;
+    margin-bottom: 80px;
+}
+
+.block-3 {
+    vertical-align: bottom;
+    display: inline-block;
+    background-color: #fff;
+    width: 600px;
+    height: 20px;
+    margin-bottom: 80px;
+}
+
+.block-4 {
+    vertical-align: bottom;
+    display: inline-block;
+    background-color: #fff;
+    width: 20px;
+    height: 100px;
+}
+
+.block-5 {
+    display: inline-block;
+    background-color: #fff;
+    width: 1138px;
+    height: 20px;
+}
+
+.block-6 {
+    display: inline-block;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 0 0 15px 15px;
+}
+
+.block div {
+    opacity: 0;
+    transition: .8s all;
+}
+
+.block div:hover {
+    opacity: 1;
+}
+
+.start:hover + .block-1 {
+    opacity: 1;
+}
+
+.block div:hover + div {
+    opacity: 1;
+} 
+
+/* ============================================================== */
+/* ======================= C o n t a c t ======================== */
+/* ============================================================== */
+
+
+.contact {
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+.contact__item {
+    display: inline-block;
+}
+
+.contact__item a {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    margin-right: 82px;
+    transition: .3s all;
+}
+.contact__item a:active {
+    color: rgba(92, 98, 250, 0.544);
+}
+
+.contact__item a:hover {
+    text-shadow: 0px 1px 0px #fff;
+    font-size: 22px;
+} 
+
+.link-1::before {
+    content: "";
+    background: url("../img/tell.svg") 0 0 no-repeat;
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+}
+
+.link-2::before {
+    content: "";
+    background: url("../img/map.svg") 0 0 no-repeat;
+    width: 13px;
+    height: 16px;
+    margin-right: 20px;
+}
+
+.link-3::before {
+    content: "";
+    background: url("../img/mail.svg") 0 0 no-repeat;
+    width: 20px;
+    height: 15px;
+    margin-right: 20px;
+}
+
+/* ============================================================== */
+/* ======================= A r t i c l e ======================== */
+/* ============================================================== */
+
+.article {
+    background-color: #f8f8f8;
+    font-family: "Proxima Nova", sans-serif;
+    color: #2b2929;
+}
+
+.article-container {
+    max-width: 1070px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.main-text > * {
+    margin-bottom: 15px;
+}
+
+.main-text > *:last-child {
+    margin-bottom: 0px;
+}
+
+.article h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.main-text p {
+    line-height: 1.875;
+}
+
+.main-text {
+    margin-bottom: 40px;
+}
+
+.article-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.article-list li {
+    line-height: 1.875;
+    background: url("../img/tick.svg") 0 2px / 27px no-repeat;
+    padding-left: 47px;
+}
+
+.article-list li:hover {
+    color: brown;
+}
+
+.article-list > * {
+    margin-bottom: 20px;
+}
+
+.article-list > *:last-child {
+    margin-bottom: 0px;
+}
+
+
+/* ============================================================== */
+/* ======================== B u t t o n ========================= */
+/* ============================================================== */
+
+
+.footer__container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.buttom {
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 10px;
+    color: #000001;
+    font-weight: 700;
+    border-radius: 15px;
+    background: radial-gradient(circle, rgba(32,197,205,1) 0%, rgba(255,246,0,1) 50%, rgba(0,255,31,1) 100%);
+    margin-right: 20px;
+}
+
+.buttom:hover {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-decoration: underline;
+    box-shadow: 0px 0px 10px 5px pink;
+}
+
+.buttom:active {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
