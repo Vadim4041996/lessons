@@ -1,0 +1,166 @@
+/*=====================================================*/
+/*======================= FONTS =======================*/
+/*=====================================================*/
+
+/* @import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+
+/*=====================================================*/
+/*==================== Reset Style ====================*/
+/*=====================================================*/
+
+@import url("reset.css");
+
+
+
+
+
+
+/* 
+        Використав властивість (transition). Ми її не вивчали,
+        просто творчий підхід.
+*/ 
+
+
+
+
+
+
+/*====================================================*/
+/*================== L e s s o n - 8 =================*/
+/*====================================================*/
+
+body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: "Orbitron", sans-serif;
+    color: white;
+}
+
+.page {
+    padding: 40px 10px;
+}
+
+.page__container {
+    background: radial-gradient(circle, rgba(36,32,205,1) 0%, rgba(246,0,255,1) 50%, rgba(0,24,255,1) 100%);
+    box-shadow: 0px 0px 8px 4px red ;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.page img {
+    max-width: 100%;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+
+.page img:hover {
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 40px;
+    color: darkblue;
+    text-align: center;
+    letter-spacing: 5px;
+    transition: .8s all;
+}
+
+.line-block {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.line-block-2 {
+    margin: 0 auto;
+    width: 80%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.line-block::before {
+    content: "";
+    background-color: coral;
+    height: 2px;
+    width: 0%;
+    transition: .8s all;
+}
+
+.line-block-2::after {
+    content: "";
+    background-color: coral;
+    height: 2px;
+    width: 0%;
+    transition: .8s all;
+}
+
+.page:hover .line-block-2::after, 
+.page:hover .line-block::before {
+    width: 80%;
+}
+
+.page:hover h1 {
+    color: paleturquoise;
+    font-size: 45px;
+}
+
+.page p:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.page p {
+    padding-left: 20px;
+    font-size: 20px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.page p:nth-child(even) {
+    text-align: center;
+}
+
+.vector {
+    display: inline-block;
+    background: url("../img/vector.svg") 0 0 / 25px 25px no-repeat;
+    padding-left: 50px;
+    min-height: 26px;
+}
+
+.arrow {
+    display: inline-block;
+    background: url("../img/arrow.svg") 0 1px / 20px 20px no-repeat;
+    padding-left: 50px;
+    min-height: 20px; 
+}
+
+.rastr {
+    border-radius: 50% 0 50% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
