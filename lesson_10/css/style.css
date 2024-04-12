@@ -1,0 +1,277 @@
+/*=====================================================*/
+/*======================= FONTS =======================*/
+/*=====================================================*/
+
+@import url("fonts.css");
+
+/*=====================================================*/
+/*==================== Reset Style ====================*/
+/*=====================================================*/
+
+@import url("reset.css");
+
+/* ===================== Header ====================== */
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    background-color: #F8F8F8;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+/* ====================== HEADER ===================== */
+
+.header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.header__container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.header__logo:hover {
+    opacity: 0.8;
+}
+.header__logo {
+    margin-right: 34px;
+}
+.logo__image {
+    max-width: 250px;
+    width: 100%;
+}
+.header__menu {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.btn {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+    color: white;
+    text-transform: capitalize;
+    background-color: #FFBC57;
+    padding: 11px 20px;
+    border-radius: 8px;
+}
+.btn > *:not(:last-child) {
+    margin-right: 10px;
+}
+.btn:hover {
+    background-color: rgb(253, 178, 64);
+} 
+.btn__img {
+    max-width: 100%;
+    vertical-align: middle; 
+}
+.header__catalog {
+    margin-top: 37px;
+}
+.catalog {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    background-color: #fff;
+    display: none;
+}
+.catalog:target {
+    display: block;
+}
+.catalog::before {
+    content: "";
+    width: 5px;
+    background-color: #FFBC57;
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    right: 0;
+}
+.catalog:hover {
+    border-radius: 8px 0 0 8px;
+}
+.catalog__list {
+    position: relative;
+    min-width: 300px;
+    padding: 8px 0;
+}
+.catalog__item:hover {
+    background-color: rgb(253, 178, 64);
+}
+.catalog__item:hover .catalog__link::after {
+    background: url("../img/icons/arrow_black.svg") 0 0 / 100% no-repeat;
+}
+.catalog__item:hover .sub-catalog {
+    display: block;
+    background-color: #fff;
+    height: 100%;
+    overflow-y: auto ;
+    border-radius: 0 8px 8px 0;
+}
+.catalog__link {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 10px 35px 10px 30px;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+}
+.catalog__link::after {
+    content: "";
+    background: url("../img/icons/arrow.svg") 0 0 / 100% no-repeat;
+    width: 7px;
+    height: 11px;
+    position: absolute;
+    top: 25px;
+    right: 24px;
+}
+.catalog__link *:not(:last-child) {
+    margin-right: 15px;
+}
+.catalog__link span {
+    vertical-align: middle;
+}
+.catalog__img {
+    max-width: 40px;
+    width: 100%;
+    vertical-align: middle;
+}
+.sub-catalog {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    overflow-y: auto;
+    min-width: 318px;
+    padding: 20px 20px 20px 30px;
+}
+.sub-catalog__link:hover {
+    color: rgb(253, 178, 64);
+    text-decoration: underline; 
+}
+.sub-catalog__link {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.4;
+    width: 100%;
+}
+.sub-catalog__link{
+    margin-bottom: 15px;
+}
+
+/* ====================== BODY ===================== */
+.page {
+    padding-bottom: 60px;
+}
+.page__container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.section-cards__cards {
+    font-size: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.section-cards__link {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 10px 5px;
+}
+.section-cards__link:hover {
+    opacity: 0.6;
+}
+.cards__card {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 24px;
+}
+.card {
+    display: inline-block;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.card:hover {
+    opacity: 0.8;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.card:hover .card__link::after {
+    background: url("../img/icons/a_card_black.svg");
+}
+.card__link {
+    font-size: 20px;
+    position: relative;
+}
+.card__link::after {
+    content: "";
+    background: url("../img/icons/arrow_card.svg") 0 0 / 100% no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.card__link span {
+    color: #B1B1B1;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.card__title {
+    position: absolute;
+    top: 20px;
+    left: 20px;  
+}
+.card__img {
+    max-width: 100%;
+}
+
+/* ====================== FOOTER ===================== */
+
+.footer {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+.footer__container {
+    max-width: 1330px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer__link-row {
+    display: inline-block;
+    color: #fff;
+    font-size: 40px;
+    padding: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.footer__link-row:hover {
+    text-decoration: underline;
+    text-shadow: 0px 0px 15px  #fff;
+}
+.btn--green-hover:hover {
+    background-color: green;
+}
+.btn--fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+}
+
+
+
