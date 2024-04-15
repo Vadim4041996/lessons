@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Transform</title>
+</head>
+
+<body>
+    <div class="wrapper">
+       <header class="header">
+            <div class="header__container">
+                <a href="#" class="header__logo logo">
+                    <img class="logo__image" src="img/logo.svg" alt="logo">
+                </a>
+                <div class="navigation">
+                    <a href="#menu" class="navigation__btn-link">
+                        <span>Navigation</span>
+                    </a>
+                    <div id="menu" class="navigation__wrapper">
+                        <a href="" class="opacity"></a>
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="#block" class="navigation__link">
+                                    Block
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#car" class="navigation__link">
+                                    Car
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       </header>
+    
+       <main class="page">
+            <div class="page__container">
+                <div class="section">
+                    <div id="block" class="section__blocks">
+                        <div class="section__block block">
+                            <div class="block__item-1 item">
+                                transform: translate<br>(5%, 5%);
+                            </div>
+                        </div>
+                        <div class="section__block block">
+                            <div class="block__item-2 item">
+                                transform: rotate(360deg);
+                            </div>
+                        </div>
+                        <div class="section__block block">
+                            <div class="block__item-3 item">
+                                transform: scale(1.2);
+                            </div>
+                        </div>
+                        <div class="section__block block">
+                            <div class="block__item-4 item">
+                                transform: skewY(20deg);
+                            </div>
+                        </div>
+                        <div class="section__block block block--border">
+                            <div class="block__item-5 item">
+                                transform-origin: top;<br> 
+                                transform: rotate(360deg);
+                            </div>
+                        </div>
+                        <div class="section__block block block--perspective">
+                            <div class="block__item-6 item">
+                                perspective: 400px;
+                                perspective-origin:center;
+                            </div>
+                        </div>
+                        <div class="section__block block block--3d">
+                            <div class="block__item-7 item">
+                                transform: rotate3d();
+                            </div>
+                        </div>
+                        <div class="section__block block block--style">
+                            <div class="block__item-8 item">
+                                transform-style: preserve-3d;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dolar">
+                        <div class="dolar__body">
+                            <div class="dolar__back">
+                                <img src="img/reshka.webp" alt="dolar">
+                            </div>
+                            <div class="dolar__front">
+                                <img src="img/orel.webp" alt="dolar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="car" class="section-car car">
+                        <div class="car__block">
+                            <div class="car__body">
+                                <img class="car__fire" src="img/fire.webp" alt="fire">
+                                <div class="car__cabin">
+                                    <img class="car__driver" src="img/boy.svg" alt="driver">
+                                    <div class="car__window"></div>
+                                    <div class="car__door">
+                                        <div class="car__handle"></div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="car__wheeles">
+                                <div class="car__wheele car__wheele--left">
+                                    <div class="car__disk-body">
+                                        <div class="car__disc"></div>
+                                    </div>
+                                </div>
+                                <div class="car__wheele car__wheele--right">
+                                    <div class="car__disk-body">
+                                        <div class="car__disc"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </main>
+       <!-- <footer class="footer"></footer> -->
+    </div>
+    
+</body>
+
+</html>
