@@ -1,0 +1,185 @@
+
+.slider-section {
+    position: relative;
+    padding-bottom: 60px;
+
+    // .slider-section__background
+
+    &__background {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-42%);
+        pointer-events: none;
+        & img {
+            width: 100%;
+        }
+
+    }
+
+    // .slider-section__container
+
+    &__container {
+        & > * {
+            margin-bottom: 20px;
+        }
+        & >:last-child {
+            margin-bottom: 0px;
+        } 
+        @media(min-width: 575px) {
+            & > * {
+                margin-bottom: 120px;
+            }
+        }
+    }
+
+    // .slider-section__sub-title
+
+    &__sub-title {
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        animation-name: opacity;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        @include adaptiveValue("font-size", 60, 24);
+        &::after {
+            content: "";
+            max-width: 193px;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, #F00 0%, #42FF00 48.9%, #2400FF 100%);
+        }
+        @media(min-width: 720px) {
+            &::after {
+                max-width: 571px;
+            }
+        }
+    }
+
+    // .slider-section__cards
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        overflow-x: scroll;
+        padding-bottom: 30px;
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0); 
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 10px rgb(191, 0, 255); 
+            @media(any-hover:hover) {
+                &:hover {
+                    -webkit-box-shadow: inset 0 0 20px rgb(191, 0, 255); 
+                }
+            }
+        }
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    // .card__link-img
+
+    &__link-img {
+        max-width: 193px;
+        min-width: 193px;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        position: relative;
+        display: block;
+        @media(any-hover:hover) {
+            &:hover span {
+            opacity: 1;
+            }
+            &:hover img {
+                transform: translateY(0);
+            }
+            &:hover .card__picture {
+                opacity: 0.8;
+            }
+        }
+        @media(min-width: 1024px) {
+            
+            max-width: 360px;
+            min-width: 360px;
+        }
+       
+    }
+
+    // .card__picture
+
+    &__picture {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        opacity: 0.5;
+        transition: opacity .3s;
+    }
+
+    // .card__play
+
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        & img {
+            width: 120px;
+            height: 120px; 
+            flex-shrink: 0;
+            transform: translateY(30%);
+            transition: transform .3s;
+        }
+        & span {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+    }
+
+    // .card__link-label
+
+    &__link-label {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        transition: all .3s;
+        @include adaptiveValue("font-size", 40, 14);
+        @media(any-hover:hover) {
+            &:hover {
+                opacity: 0.8;
+                transform: scale(1.1);
+                color: #bb42fc;
+                
+            }
+        }
+    }
+}

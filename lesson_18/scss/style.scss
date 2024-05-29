@@ -1,0 +1,67 @@
+@use "sass:math";
+
+/*======================= FONTS =======================*/
+
+@import "_fonts.scss";
+@import "https://fonts.googleapis.com/css?family=Exo:400,700&disolay=swap";
+@import "https://fonts.googleapis.com/css?family=Orbitron:500&display=swap";
+
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_header.scss";
+@import "_hero-section.scss";
+@import "_about-section.scss";
+@import "_slider-section.scss";
+
+// Налаштування адаптивної сітки ===============================================================================================================================================================================================================================================================================================
+
+
+ 
+ 
+/* =================================================== */
+
+body {
+    font-family: "Exo", sans-serif;
+    color: #FFF;
+    font-size: 18px ;
+    background-color: #000000;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+    padding-top: 123px;
+    @media(min-width: 520px) {
+        padding-top: 140px;
+    }
+}
+main {
+    & > * {
+        margin-bottom: 20px;
+    }
+    & > *:last-child{
+        margin-bottom: 0px;
+    }
+    @media(min-width: 575px) {
+        & > * {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+
+[class*="__container"] {
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
