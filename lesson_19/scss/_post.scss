@@ -1,0 +1,79 @@
+
+.post {
+    background-image: url("../img/background.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url("../img/zara_bg.webp");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 732px;
+        height: 309px;
+        position: absolute;
+        top: 1%;
+        right: -2%;
+
+    }
+
+    // .post_container
+
+    &__container {  
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        min-height: 696px;
+    }
+
+    // .post__hero-img
+
+    &__hero-img {
+        max-width: 42%;
+        transform: translate(-15%);
+        & img {
+            width: 100%;
+        }
+    }
+
+    // .post__content
+
+    &__content {
+        padding-bottom: 93px;
+        padding-top: 40px;
+        padding-right: 33px;
+        max-width: 42%;
+        >*:not(:last-child){
+            margin-bottom: 55px;
+        }
+    }
+
+    // .post__title
+
+    &__title {
+        max-width: 191px;
+        max-height: 81px;
+        & img {
+            width: 100%;
+        }
+    }
+
+    // .post__text
+
+    &__text {
+        color: $colorWhite;
+        line-height: 1.6;
+        text-transform: capitalize;
+        @include adaptiveValue("font-size", 26, 18);
+       
+    }
+
+    // .post__button
+
+    &__button {
+    }
+}
+

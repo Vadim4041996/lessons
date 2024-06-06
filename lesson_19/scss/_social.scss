@@ -1,0 +1,137 @@
+
+.social {
+    padding: 100px 0px;
+    background-color: $backgroundLightGrey;
+    // .social__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    // .social__body
+
+    &__body {
+        >*:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+
+    // .social__list-img
+
+    &__list-img {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        @media(min-width: 479.98px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media(min-width: 767.98px) {
+            gap: 24px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media(min-width: 1199.98px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+
+    // .social__item-img
+
+    &__item-img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    // .social__link-img
+
+    &__link-img {
+        width: 100%;
+        overflow: hidden;
+        transition: all .3s;
+        @media(any-hover:hover) {
+            &:hover {
+                box-shadow: 0px 0px 6px 1px #00000092;
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    // .social__img
+
+    &__img {
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        width: 100%;
+        transition: all .3s;
+    }
+
+    // .social__form
+
+    &__form {
+        >*:not(:last-child) {
+            margin-bottom: 74px;
+            text-align: center;
+        }
+    }
+
+    // .social__form-inner
+
+    &__form-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 26px;
+        
+    }
+
+    // .social__email
+
+    &__email {
+        max-width: 643px;
+        outline: none;
+        border-bottom: 2px solid $mainColor;
+        padding-bottom: 13px;
+        padding-inline: 15px;
+        &::placeholder {
+            color: rgba(30, 40, 50, 0.50);
+            font-weight: 600;
+            line-height: 1.2;
+            text-transform: capitalize;
+            transition: all .3s;
+        }
+        &:focus::placeholder {
+            opacity: 0;
+        }
+        @media(any-hover:hover) {
+            &:hover {
+                &::placeholder {
+                    color: #FF6F61;
+                }
+            }
+        }
+    }
+
+    // .social__submit
+
+    &__submit {
+        font-family: "Open Sans";
+        font-weight: 400;
+        line-height: 1.2;
+        text-transform: capitalize;
+        max-width: 91px;
+        border-bottom: 2px solid $mainColor;
+        padding-bottom: 13px;
+        @media(any-hover:hover) {
+            &:hover {
+                cursor: pointer;
+                color: #FF6F61;
+            }
+        }
+    }
+}

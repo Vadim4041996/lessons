@@ -1,0 +1,111 @@
+.hero {
+    background-color: $backgroundLightGrey;
+    padding-top: 64px;
+    padding-bottom: 60px;
+    margin-bottom: 90px;
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        position: absolute;
+    }
+    &::before {
+        background-image: url("../img/icons/branch_left.svg");
+        width: 133px;
+        height: 67px;
+        transform: rotate(150deg);
+        left: -21px;
+        bottom: 108px;
+    }
+    &::after {
+        background-image: url("../img/icons/branch_right.svg");
+        width: 195px;
+        height: 262px;
+        right: -33px;
+        bottom: 157px;
+        transform: rotate(150deg);
+
+    }
+    
+    // .hero__container
+
+    &__container {
+        display: flex;     
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 98px;
+    }
+
+    // .hero__body
+
+    &__body {
+       width: 53%;
+        >* {
+            margin-bottom: 52px;
+        }
+        >:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    // .hero__content
+
+    &__content {
+        font-weight: 400;
+        line-height: 1.83;
+        text-transform: capitalize;
+        margin-bottom: 66px;
+        @include adaptiveValue("font-size", 30, 18);
+    }
+
+    // .hero__btn-link
+
+    &__btn-link {
+        transition: all .3s;
+        span {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            &::before {
+                content: "";
+                background-image: url("../img/icons/cart_btn.svg");
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 24px;
+            }
+        }
+        @media(any-hover) {
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.67);
+            }      
+        }
+    }
+
+    // .hero__logo
+
+    &__logo {
+        width: 32.9%;
+        border-radius: 160px 0px;
+        border: 2px solid rgba(0, 0, 0, 0.25);
+        
+    }
+
+    // .hero__image
+
+    &__image {
+        border-radius: 160px 0px;
+        aspect-ratio: 424/542;
+        object-fit: cover;
+        width: 100%;
+        margin: -20px 18px 20px -18px;
+    }
+}
+.link-btn {
+}
+ 
