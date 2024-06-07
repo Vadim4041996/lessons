@@ -1,3 +1,18 @@
+// ======================================== LOGO===================================
+.logo {
+    max-width: 140px;
+    width: 100%;
+    
+    // .logo__image
+
+    &__image {
+        width: 100%;
+    }
+    @media(min-width: 550px) {
+        max-width: 180px;
+    }
+}
+
 // ======================================== CARD-LABEL===================================
 .label-img {
     position: absolute;
@@ -27,11 +42,10 @@
     font-family: Roboto;
     background-color: $mainColor;
     color: $colorWhite;
-    font-size: 29px;
     font-weight: 400;
     line-height: 1.2;
     text-transform: capitalize;
-    padding: 19px 26px;
+    padding: 9px 16px;
     // .btn--white
     &--white {
         background-color: $colorWhite;
@@ -42,6 +56,10 @@
             }
         }
     }
+    @include adaptiveValue("font-size", 29, 18);
+    @media(min-width: 767.98px) {
+        padding: 19px 26px;
+    }
 }
 
 // =========================================== TITLE ===================================
@@ -51,14 +69,14 @@
     line-height: 1.2;
     text-transform: capitalize;
     text-align: center;
-    @include adaptiveValue("font-size", 50, 34);
+    @include adaptiveValue("font-size", 50, 22);
     // title--bider-font
 
     &--bider-font {
         font-weight: 300;
         line-height: 1;
         text-align: left;
-        @include adaptiveValue("font-size", 74, 34);
+        @include adaptiveValue("font-size", 74, 28);
     }
 }
 

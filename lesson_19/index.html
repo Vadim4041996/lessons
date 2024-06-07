@@ -18,9 +18,11 @@
                             <img class="header__search-img" src="img/icons/searsch.svg" alt="search icon">
                         </button>
                     </div>
-                    <a href="header__logo logo">
-                        <img class="logo__image" src="img/icons/logo.svg" alt="logo">
-                    </a>
+                    <div class="header__logo-inner">
+                        <a href="#" class="header__logo logo">
+                            <img class="logo__image" src="img/icons/logo.svg" alt="logo">
+                        </a>
+                    </div>
                     <div class="header__action">
                         <ul class="header__list">
                             <li class="header__item">
@@ -37,6 +39,9 @@
                             </li>
                         </ul>
                     </div>
+                    <button class="header__burger" type="button">
+                        <span></span>
+                    </button>
                 </div>
                 <nav class="header__navigation">
                     <ul class="header__list-navigation">
@@ -63,32 +68,32 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__burger" type="button">
-                    <span></span>
-                </button>
             </div>
         </header>
         <main class="page">
             <section class="page__hero hero">
                 <div class="hero__container">
-                    <div class="hero__body">
-                        <h1 class="title title--bider-font">Collections</h1>
-                        <div class="hero__content">
-                            <p>
-                                you can explore ans shop many differnt collection
-                                from various barands here.
-                            </p>
+                    <div class="hero__inner">
+                        <div class="hero__body">
+                            <h1 class="title title--bider-font">Collections</h1>
+                            <div class="hero__content">
+                                <p>
+                                    you can explore ans shop many differnt collection
+                                    from various barands here.
+                                </p>
+                            </div>
+                            <a data-da=".hero__btn-inner, 550" href="#" class="hero__btn-link btn">
+                                <span>shop now</span>
+                            </a>
                         </div>
-                        <a href="#" class="hero__btn-link btn">
-                            <span>shop now</span>
-                        </a>
+                        <div class="hero__logo">
+                            <img class="hero__image" src="img/hero.webp" alt="logo hero">
+                        </div>
                     </div>
-                    <div class="hero__logo">
-                        <img class="hero__image" src="img/hero.webp" alt="logo hero">
-                    </div>
+                    <div class="hero__btn-inner"></div>
                 </div>
             </section>
-            <section class="page__category category">
+            <div class="page__category category">
                 <div class="category__container">
                     <ul class="category__brand-list">
                         <li class="category__brand-item">
@@ -108,28 +113,28 @@
                         </li>
                     </ul>
                     <div class="category__grid-items">
-                        <a href="#" class="category_item-link">
+                        <a href="#" class="category__item-link">
                             <img src="img/grid/card_1.webp" alt="girl in dress">
                         </a>
-                        <a href="#" class="category_item-link">
+                        <a href="#" class="category__item-link">
                             <img src="img/grid/card_2.webp" alt="men in black jacket">
                         </a>
-                        <a href="#" class="category_item-link">
+                        <a href="#" class="category__item-link">
                             <div class="category__img-label label-img">
                                 <span class="label-img__row-2">sale</span>
                             </div>
                             <img src="img/grid/card_3.webp" alt="girl in white sweater">
                         </a>
-                        <a href="#" class="category_item-link">
+                        <a href="#" class="category__item-link">
                             <img src="img/grid/card_4.webp" alt="girl in with flowers dress">
                         </a>
-                        <a href="#" class="category_item-link">
+                        <a href="#" class="category__item-link">
                             <img src="img/grid/card_5.webp" alt="casual style men">
                         </a>
                     </div>
 
                 </div>
-            </section>
+            </div>
             <section class="page__cards cards">
                 <div class="cards__container">
                     <h2 class="title">Or subscribe to the newsletter</h2>
@@ -154,7 +159,7 @@
                     </div>
                     <div class="cards__inner">
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_1.webp"
                                         alt="Adicolor Classics Joggers">
@@ -173,7 +178,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <div class="card__img-label label-img">
                                         <span class="label-img__row-2">hot</span>
@@ -195,7 +200,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_3.webp"
                                         alt="Geometric print Scarf">
@@ -214,7 +219,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <div class="card__img-label label-img">
                                         <span class="label-img__row-1">sale</span>
@@ -238,7 +243,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_5.webp" alt="Basic Dress Green">
                                 </a>
@@ -256,7 +261,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <div class="card__img-label label-img">
                                         <span class="label-img__row-1">sale</span>
@@ -280,7 +285,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_7.webp" alt="Nike Repel Miler">
                                 </a>
@@ -298,7 +303,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_8.webp"
                                         alt="Nike Sportswear Futura Luxe">
@@ -366,7 +371,7 @@
                     </div>
                     <div class="cards__inner">
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_1.webp"
                                         alt="Adicolor Classics Joggers">
@@ -385,7 +390,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <div class="card__img-label label-img">
                                         <span class="label-img__row-2">hot</span>
@@ -407,7 +412,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_3.webp"
                                         alt="Geometric print Scarf">
@@ -426,7 +431,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <div class="card__img-label label-img">
                                         <span class="label-img__row-1">sale</span>
@@ -450,7 +455,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_5.webp" alt="Basic Dress Green">
                                 </a>
@@ -468,7 +473,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <div class="card__img-label label-img">
                                         <span class="label-img__row-1">sale</span>
@@ -492,7 +497,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_7.webp" alt="Nike Repel Miler">
                                 </a>
@@ -510,7 +515,7 @@
                             </div>
                         </div>
                         <div class="cards__card card">
-                            <figure href="#" class="card__inner">
+                            <figure class="card__inner">
                                 <a href="#" class="card__link-img">
                                     <img class="card__img" src="img/cards_grid/product_8.webp"
                                         alt="Nike Sportswear Futura Luxe">
@@ -580,16 +585,113 @@
             </article>
         </main>
         <footer class="footer">
-            <div class="footer__container">
                 <div class="footer__main">
-                    <article class="footer__"></article>
+                    <div class="footer__container">
+                        <div class="footer__contact">
+                            <a href="#" class="footer__logo logo">
+                                <img src="img/icons/logo.svg" class="logo__image" alt="logo">
+                            </a>
+                            <div class="footer__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua
+                                </p>
+                            </div>
+                            <ul class="footer__list-social">
+                                <li class="footer__item-social">
+                                    <a href="" class="footer__link-social">
+                                        <img src="img/icons/facebook.svg" alt="social icon">
+                                    </a>
+                                </li>
+                                <li class="footer__item-social">
+                                    <a href="" class="footer__link-social">
+                                        <img src="img/icons/twitter.svg" alt="social icon">
+                                    </a>
+                                </li>
+                                <li class="footer__item-social">
+                                    <a href="" class="footer__link-social">
+                                        <img src="img/icons/linkedin.svg" alt="social icon">
+                                    </a>
+                                </li>
+                                <li class="footer__item-social">
+                                    <a href="" class="footer__link-social">
+                                        <img src="img/icons/instagram.svg" alt="social icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__inner">
+                            <div class="footer__column">
+                                <h4 class="footer__sub-title">CATALOG</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__item">Necklaces</li>
+                                    <li class="footer__item">hoodies</li>
+                                    <li class="footer__item">Jewelry Box</li>
+                                    <li class="footer__item">t-shirt</li>
+                                    <li class="footer__item">jacket</li>
+                                </ul>
+                            </div>
+                            <div class="footer__column">
+                                <h4 class="footer__sub-title">
+                                    <a href="#" class="footer__link-sub-title">ABOUT US</a>
+                                </h4>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">Our Producers</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">Sitemap</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">FAQ</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">About Us</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__column">
+                                <h4 class="footer__sub-title">
+                                    <a href="#" class="footer__link-sub-title">CUSTOMER SERVICES</a>
+                                </h4>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">Contact Us</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">Track Your Order</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">Product Care & Repair</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">Book an Appointment</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link">Shipping & Returns</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer__copyright"></div>
-            </div>
+                <div class="footer__copyrights">
+                    <div class="footer__container">
+                        <div class="footer__copyright">© 2022 Coral , Inc.</div>
+                        <div class="footer__pay">
+                            <img src="img/icons/icons_payment.webp" alt="pay">
+                        </div>
+                        <a href="#" class="footer__scroll-top">
+                            <span>Scroll to top</span>
+                        </a>
+                    </div>
+                </div>
         </footer>
-    </div>
+    </div> 
     <script src="js/dynamic_adapt.js"></script>
 </body>
 
 </html>
-

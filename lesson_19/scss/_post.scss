@@ -12,21 +12,34 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 732px;
-        height: 309px;
+        width: 632px;
+        height: 250px;
         position: absolute;
-        top: 1%;
-        right: -2%;
-
+        bottom: 0;
+        right: -11%;
+    }
+    @media(min-width: 767.98px) {
+        &::after {
+            width: 732px;
+            height: 309px;
+            top: 1%;
+            right: -2%;
+        }
     }
 
     // .post_container
 
     &__container {  
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        min-height: 696px;
+        flex-direction: column-reverse;
+        align-items: center;
+        min-height: 530px;
+        @media(min-width: 767.98px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            min-height: 696px;
+        }
     }
 
     // .post__hero-img
@@ -34,6 +47,8 @@
     &__hero-img {
         max-width: 42%;
         transform: translate(-15%);
+        position: relative;
+        z-index: 1;
         & img {
             width: 100%;
         }
@@ -42,12 +57,22 @@
     // .post__content
 
     &__content {
-        padding-bottom: 93px;
+        padding-bottom: 20px;
         padding-top: 40px;
-        padding-right: 33px;
-        max-width: 42%;
+        max-width: 100%;
+        text-align: center;
         >*:not(:last-child){
-            margin-bottom: 55px;
+            margin-bottom: 25px;
+        }
+        @media(min-width: 767.98px) {
+            padding-bottom: 93px;
+            padding-top: 40px;
+            padding-right: 33px;
+            max-width: 42%;
+            text-align: left;
+            >*:not(:last-child){
+                margin-bottom: 55px;
+            }
         }
     }
 
@@ -55,9 +80,13 @@
 
     &__title {
         max-width: 191px;
-        max-height: 81px;
         & img {
             width: 100%;
+        }
+        @media(max-width: 767.98px) {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 
@@ -76,4 +105,6 @@
     &__button {
     }
 }
+
+
 

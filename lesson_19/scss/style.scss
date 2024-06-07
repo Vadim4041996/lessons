@@ -15,7 +15,7 @@
 @import "_cards.scss";
 @import "_post.scss";
 @import "_social.scss";
-
+@import "_footer.scss";
 
 
 
@@ -39,10 +39,15 @@ main {
     padding-bottom: 20px;
     flex-grow: 1;
     >* {
-        margin-bottom: 140px;
+        margin-bottom: 50px;
     }
     >:last-child {
         margin-bottom: 0px;
+    }
+    @media (min-width: 767.98px) {
+        >* {
+            margin-bottom: 140px;
+        }
     }
 }
 
