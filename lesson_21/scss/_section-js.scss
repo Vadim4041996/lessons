@@ -1,0 +1,98 @@
+.page {
+    background-color: #08011cab;
+    color: #fff;
+    @include adaptiveValue("font-size", 18, 12);
+
+    // .page__java-script
+
+    &__java-script {
+        background-color: #3003398d;
+        border-radius: toRem(25);
+        display: flex;
+        flex-direction: column;
+        gap: toRem(15);
+        align-items: center;
+        @include adaptiveValue("padding", 20, 10);
+        @media(min-width: toEm(767.98)) {
+            gap: toRem(30);
+        } 
+    }
+
+    // .page__title
+
+    &__title {
+        letter-spacing: toRem(5);
+        text-decoration: underline;
+        font-weight: 600;
+        line-height: 1.4;
+        text-transform: capitalize;
+        text-align: center;
+        @include adaptiveValue("font-size", 60, 28);
+    }
+
+    // .page__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(25);
+        @media(min-width: toEm(767.98)) {
+            gap: toRem(65);
+        }
+
+    }
+
+    // .page__content
+
+    &__content {
+        background-color: #ffffffd3;
+        border-radius: toRem(20);
+        color: #300339;
+        > *:not(:last-child) {
+            margin-bottom: toRem(15);
+        }
+        @include adaptiveValue("padding", 20, 10);
+    }
+
+    // .page__sub-title
+
+    &__sub-title {
+        color: red;
+        text-decoration: underline;
+        font-weight: 600;
+        letter-spacing: toRem(3);
+        text-align: center;
+        @include adaptiveValue("font-size", 30, 20);
+    }
+
+    // .page__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(5);
+        @include adaptiveValue("padding-inline", 20, 5);
+    }
+
+    // .page__item
+
+    &__item {
+        line-height: 1.2;
+    }
+
+    // .page__text
+
+    &__text {
+        line-height: 1.4;
+        &--big-size {
+            font-size: toRem(25);
+            color: #0d05ff;
+            @include adaptiveValue("font-size", 25, 16);
+        }
+        span {
+            text-transform: uppercase;
+            color: #04af23;
+        }
+    }
+}
+
