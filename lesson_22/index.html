@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 22</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <header class="header">
+            <div class="header__container">
+               
+            </div>
+        </header> -->
+        <main class="page">
+            <div class="page__container">
+                <section class="page__java-script">
+                    <h1 class="page__title">Java-script</h1>
+                    <div class="page__inner">
+                       <div class="page__block">
+                        <h3 class="page__sub-title">Задача №1</h3>
+                        <p class="page__task">Що потрапить в консоль?</p>
+                        <ul class="page__list">
+                            <li class="page__item">let someVar = 0;</li>
+                            <li class="page__item">++someVar;</li>
+                            <li class="page__item">
+                                if (someVar) { <br> <span>console.log(someVar);</span> <br> }
+                            </li>
+                        </ul>
+                        <p class="page__answer">
+                            <span>Відповідь:</span><br>1(Оператор інкременту (++) збільшує свій операнд на 1)
+                        </p>
+                        </div>
+                        <div class="page__block">
+                            <h3 class="page__sub-title">Задача №2</h3>
+                            <p class="page__task">
+                                За допомогою циклу FOR виведіть в консоль 10 рядків:
+                            </p>
+                            <ul class="page__list">
+                                <li class="page__item">Пункт №1</li>
+                                <li class="page__item">Пункт №2</li>
+                                <li class="page__item">і т.д.</li>
+                                <li class="page__item">
+                                    <p class="page__answer">
+                                        <span>Відповідь:</span>
+                                    </p>
+                                </li>
+                                <li class="page__item">
+                                    for (let i = 1; i <= 10; i++) {<br><span>console.log(`Пункт №${i}`);</span><br>}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="page__block">
+                            <h3 class="page__sub-title">Задача №3</h3>
+                            <p class="page__task">Що потрапить в консоль ?</p>
+                            <ul class="page__list">
+                                <li class="page__item">
+                                    if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <= "10" || 20 === "20") {<br> <span>console.log('000');</span> <br> }
+                                </li>
+                            </ul>
+                            <p class="page__answer">
+                                <span>Відповідь:</span><br>В консоль нічого не потрапить. Оскальки результат обчислення False.
+                            </p>
+                        </div>
+                        <div class="page__block">
+                            <h3 class="page__sub-title">Задача №4</h3>
+                            <p class="page__task">
+                                Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат ділення: "<br>Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.<br>Функція не має повертати NaN, Infinite або помилку.
+                            </p>
+                            <ul class="page__list">
+                                <li class="page__item">
+                                    <p class="page__answer">
+                                        <span>Відповідь:</span>
+                                    </p>
+                                </li>
+                                <li class="page__item">const numOne = 20</li>
+                                <li class="page__item">const numTwo = 4</li>
+                                <li class="page__item">
+                                    function calcSum(a = 1, b = 1) {<br><span>console.log( `Результат ділення:`, a / b)<br>}</span>
+                                </li>
+                                <li class="page__item">calcSum()</li>
+                                <li class="page__item">calcSum(numOne, numTwo)</li>
+                                <li class="page__item">calcSum(16, 8)</li>
+                                <li class="page__item"></li>
+
+                            </ul>
+                        </div>
+                        <div class="page__block">
+                            <h3 class="page__sub-title">Задача №5</h3>
+                            <p class="page__task">
+                                Створіть масив даних - 5 елементів, один з яких число 10. <br> Обробіть масив за допомогою методу перебору. <br> Перевіряйте елемент на відповідність числу 10, у разі відповідності, виводьте в консоль.
+                            </p>
+                            <ul class="page__list">
+                                <li class="page__item">
+                                    <p class="page__answer">
+                                        <span>Відповідь:</span>
+                                    </p>
+                                    let someArray = [`white`, `black`, 10, `silver`, `red`]<br>someArray.forEach((item) => {<br><span>item === 10 ? console.log(`число:`, item) : null</span><br>})
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- <footer class="footer">
+            <div class="footer__container">
+            </div>
+        </footer> -->
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/dynamic_adapt.js"></script>
+</body>
+
+</html>
+
