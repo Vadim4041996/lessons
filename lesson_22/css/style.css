@@ -79,7 +79,7 @@ textarea {
 
 .page {
   background-color: #000000;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7607843137);
 }
 @media (min-width: 84.375em) {
   .page {
@@ -158,7 +158,7 @@ textarea {
 }
 .page__sub-title {
   font-size: 1.5rem;
-  color: rgb(255, 247, 0);
+  color: rgba(255, 251, 138, 0.652);
   font-weight: 600;
   text-decoration: underline;
   letter-spacing: 0.3125rem;
@@ -166,7 +166,7 @@ textarea {
   text-transform: uppercase;
 }
 .page__task {
-  color: rgba(21, 255, 0, 0.727);
+  color: rgba(178, 255, 171, 0.533);
   line-height: 1.4;
 }
 .page__list :not(:last-child) {
@@ -180,7 +180,7 @@ textarea {
   padding-left: 2.8125rem;
 }
 .page__answer span {
-  color: rgb(255, 0, 0);
+  color: rgb(250, 90, 90);
   text-decoration: underline;
   padding-left: 0rem;
   letter-spacing: 0.1875rem;
