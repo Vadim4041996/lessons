@@ -1,0 +1,158 @@
+/* ===================================================== */
+@import "https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap";
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.header {
+  padding-block: 1.25rem;
+  background-color: black;
+  color: white;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.page {
+  font-size: 1.125rem;
+}
+.page__container :not(:last-child) {
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
+}
+.page__text {
+  color: white;
+}
+.page__inner-img {
+  max-width: 19.5rem;
+}
+.page__image {
+  width: 100%;
+}
+.page__button {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 0.9375rem;
+}
+
+.items {
+  color: white;
+  padding-block: 0.9375rem;
+}
+.items :not(:last-child) {
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
+}
+
+.item {
+  letter-spacing: 0.625rem;
+}
+
+.footer {
+  background-color: black;
+  padding-block: 1.25rem;
+  text-align: center;
+  color: white;
+  font-size: 1.875rem;
+}
+
+/* =================================================== */
+body {
+  font-family: "OpenSans", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: black;
+}
+
+[class*=__container] {
+  max-width: 84.375rem;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+}
