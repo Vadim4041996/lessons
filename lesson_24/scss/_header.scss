@@ -1,0 +1,12 @@
+.header {
+    padding-block: toRem(20);
+    text-align: center;
+    background-color: #e12121;
+
+    // .header__title
+    &__title {
+        font-size: toRem(50);
+        letter-spacing: toRem(7);
+        font-weight: 600;
+    }
+}

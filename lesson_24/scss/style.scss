@@ -1,0 +1,46 @@
+@use "sass:math";
+
+/* ===================================================== */
+
+
+@import "https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_header.scss";
+@import "_section-js.scss";
+@import "_footer.scss";
+ 
+/* =================================================== */
+
+body {
+    font-family: "OpenSans", sans-serif;
+    color: $mainColor;
+    &.loaded {
+        opacity: 1;
+        transition: opacity 1s;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    background-color: $mainBgColor;
+    main {
+        padding: toRem(20);
+        flex-grow: 1;
+    }
+}
+
+[class*="__container"] {
+    max-width: toRem(1350);
+    padding: 0 toRem(15);
+    margin: 0 auto;
+}
+
+
+
+
